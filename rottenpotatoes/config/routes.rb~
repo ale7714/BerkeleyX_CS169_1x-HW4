@@ -14,7 +14,7 @@ Rottenpotatoes::Application.routes.draw do
   #   resources :products
   root :to => 'movies#index'
   resources :movies do
-    member do 
+    collection do 
       get 'similar'
     end
   end
